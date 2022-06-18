@@ -1,0 +1,30 @@
+body{
+    background-color: darkgray;
+}
+.flex-container{
+    display: flex;
+    border: 2px dotted black;
+    max-width: 500px;
+    max-height: 200px;
+}
+.flex-item{
+    background-color: blueviolet;
+    margin: 5px;
+    color: aliceblue;
+    text-align: center;
+    width: 100px;
+    height: 50px;
+    line-height: 50px;
+}
+.default{
+    flex-flow: row nowrap;
+}
+.row-wrap{
+    flex-flow: row wrap;
+}
+.rowReverse-wrapReverse{
+    flex-flow: row-reverse wrap-reverse;
+}
+.column-wrap{
+    flex-flow: column wrap;
+}

@@ -1,0 +1,36 @@
+body{
+    background-color: darkgray;
+}
+.flex-container{
+    display: flex;
+    border: 2px solid black;
+    max-width: 500px;
+}
+.flex-item{
+    background-color: blueviolet;
+    margin: 5px;
+    height: 50px;
+    width: 50px;
+    text-align: center;
+    line-height: 50px;
+}
+.flexStart{
+    justify-content: flex-start;
+}
+.flexEnd{
+    justify-content: flex-end;
+}
+.center{
+    justify-content: center;
+}
+.spaceBetween{
+    justify-content: space-between;
+}
+.spaceAround{
+    justify-content: space-around;
+}
+.column-spaceBetween{
+    flex-direction: column;
+    justify-content: space-between;
+    height: 400px;
+}

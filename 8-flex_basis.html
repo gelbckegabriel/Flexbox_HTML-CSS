@@ -5,40 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamentos - Flex Basis</title>
-    <style>
-        body{
-            background-color: darkgray;
-        }
-        .container{
-            max-width: 500px;
-            border: 2px solid black;
-            display: flex;
-        }
-        .item{
-            background-color: blueviolet;
-            color: aliceblue;
-            text-align: center;
-            margin: 5px;
-        }
-        .basisAuto{
-            flex-basis: auto; /*Auto vai tentar preencher o restante do espaço com o fator de crescimento ativo.*/
-        }
-        .basis0{
-            flex-basis: 0; /*Vai tentar equilibrar o fator de espaçamento de todos, se o FG for igual.*/
-        }
-        .basisWidth{
-            flex-basis: 100px;
-        }
-        .fg-0{
-            flex-grow: 0;
-        }
-        .fg-1{
-            flex-grow: 1;
-        }
-        .fg-2{
-            flex-grow: 2;
-        }
-    </style>
+    <link rel="stylesheet" href="8-flex_basis.css">
 </head>
 <body>
     <h1>Flex Basis (Basis == auto && Grow == 1)</h1>
