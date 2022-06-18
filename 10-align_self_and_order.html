@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentos - Align Self and Order</title>
+    <style>
+        body{
+            background-color: darkgray;
+        }
+        .container{
+            max-width: 350px;
+            border: 2px solid black;
+            margin-bottom: 10px;
+            display: flex;
+        }
+        .item{
+            background-color: blueviolet;
+            color: aliceblue;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        /*Order*/
+        .o1{
+            order: 1;
+        }
+        .o2{
+            order: 2;
+        }
+        .o3{
+            order: 3;
+        }
+
+        /*Align-Self*/
+        .center{
+            align-self: center;
+        }
+        .start{
+            align-self: flex-start;
+        }
+        .end{
+            align-self: flex-end;
+        }
+        .stretch{
+            align-self: stretch;
+        }
+        .baseline{
+            align-self: baseline;
+        }
+        .auto{
+            align-self: auto;
+        }
+    </style>
+</head>
+<body>
+    <h1>Order: alternados</h1>
+    <div class="container">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item o1">3</div>
+        <div class="item 03">4</div>
+        <div class="item 02">5</div>
+    </div>
+
+    <h1>Align-Self - Center</h1>
+    <div class="container">
+        <div class="item center">AAA</div>
+        <div class="item center">123</div>
+        <div class="item center">LWEFPJWE OSCSOACJA OAIKDJQWE DCWEF EWFOWEFOEIF</div>
+        <div class="item center">item 4</div>
+    </div>
+
+    <h1>Align-Self - Start</h1>
+    <div class="container">
+        <div class="item start">AAA</div>
+        <div class="item start">123</div>
+        <div class="item start">LWEFPJWE OSCSOACJA OAIKDJQWE DCWEF EWFOWEFOEIF</div>
+        <div class="item start">item 4</div>
+    </div>
+
+    <h1>Align-Self - End</h1>
+    <div class="container">
+        <div class="item end">AAA</div>
+        <div class="item end">123</div>
+        <div class="item end">LWEFPJWE OSCSOACJA OAIKDJQWE DCWEF EWFOWEFOEIF</div>
+        <div class="item end">item 4</div>
+    </div>
+
+    <h1>Align-Self - Stretch</h1>
+    <div class="container">
+        <div class="item stretch">AAA</div>
+        <div class="item stretch">123</div>
+        <div class="item stretch">LWEFPJWE OSCSOACJA OAIKDJQWE DCWEF EWFOWEFOEIF</div>
+        <div class="item stretch">item 4</div>
+    </div>
+
+    <h1>Align-Self - Baseline</h1>
+    <div class="container">
+        <div class="item baseline">AAA</div>
+        <div class="item baseline">12vde rv3</div>
+        <div class="item baseline">LWEFPJWE OSCWEF WEFOEIF</div>
+        <div class="item baseline">item 4</div>
+    </div>
+
+    <h1>Align-Self - Auto</h1>
+    <div class="container">
+        <div class="item auto">AAA</div>
+        <div class="item auto">123</div>
+        <div class="item auto">LWEFPJWE OSCSOACJA OAIKDJQWE DCWEF EWFOWEFOEIF</div>
+        <div class="item auto">item 4</div>
+    </div>
+</body>
+</html>
